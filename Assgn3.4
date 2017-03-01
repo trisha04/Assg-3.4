@@ -1,0 +1,10 @@
+NameNode importance in HADOOP Cluster:
+It is thew major piece of HDFS file system
+Stores the metadata of all the nodes
+It also maintains the directory tree of files in a file system
+Keeps a track of the location of file in a cluster
+Nmaenode is called as the masternode and it does not store data of all the slave nodes
+It knows how to construuct file from blocks.
+Nmaenode was a single point of failure on Hadoop 1.x and hadoop cluster was considered down
+In Hadoop 2.x a secondary namenode is present whic hacts as abackup node to provide high data availability
+When namenode goes down,secondary namenode becomes active
